@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  Copyright (c) 2010-2013 Tinyboard Development Group
+ *  Copyright (c) 2010-2015 Tinyboard Development Group
  */
 
 defined('TINYBOARD') or exit;
@@ -111,7 +111,7 @@ function mod_dashboard() {
 			$latest = unserialize($_COOKIE['update']);
 		} else {
 			$ctx = stream_context_create(array('http' => array('timeout' => 5)));
-			if ($code = @file_get_contents('http://tinyboard.org/version.txt', 0, $ctx)) {
+			if ($code = @file_get_contents('http://tinyboard.net/version.txt', 0, $ctx)) {
 				$ver = strtok($code, "\n");
 				
 				if (preg_match('@^// v(\d+)\.(\d+)\.(\d+)\s*?$@', $ver, $matches)) {

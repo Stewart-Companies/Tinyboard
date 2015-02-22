@@ -1,7 +1,7 @@
 <?php
 
 /*
- *  Copyright (c) 2010-2013 Tinyboard Development Group
+ *  Copyright (c) 2010-2015 Tinyboard Development Group
  *  
  *  WARNING: This is a project-wide configuration file and is overwritten when upgrading to a newer
  *  version of Tinyboard. Please leave this file unchanged, or it will be a lot harder for you to upgrade.
@@ -17,9 +17,7 @@
  *  Some directives are commented out. This is either because they are optional and examples, or because
  *  they are "optionally configurable", and given their default values by Tinyboard's code later if unset.
  *
- *  More information: http://tinyboard.org/docs/?p=Config
- *
- *  Tinyboard documentation: http://tinyboard.org/docs/
+ *  Tinyboard documentation: http://tinyboard.net/
  *
  */
 
@@ -107,8 +105,6 @@
 	 * On top of the static file caching system, you can enable the additional caching system which is
 	 * designed to minimize SQL queries and can significantly increase speed when posting or using the 
 	 * moderator interface. APC is the recommended method of caching.
-	 *
-	 * http://tinyboard.org/docs/index.php?p=Config/Cache
 	 */
 
 	$config['cache']['enabled'] = false;
@@ -174,8 +170,6 @@
 	 * To further prevent spam and abuse, you can use DNS blacklists (DNSBL). A DNSBL is a list of IP
 	 * addresses published through the Internet Domain Name Service (DNS) either as a zone file that can be
 	 * used by DNS server software, or as a live DNS zone that can be queried in real-time.
-	 *
-	 * Read more: http://tinyboard.org/docs/?p=Config/DNSBL
 	 */
 
 	// Prevents most Tor exit nodes from making posts. Recommended, as a lot of abuse comes from Tor because
@@ -218,8 +212,6 @@
 	 * user sits on the page before posting). If your imageboard is quite fast/popular, set
 	 * $config['spam']['hidden_inputs_max_pass'] and $config['spam']['hidden_inputs_expire'] to
 	 * something higher to avoid false positives.
-	 *
-	 * See also: http://tinyboard.org/docs/?p=Your_request_looks_automated
 	 *
 	 */
 
@@ -294,8 +286,6 @@
 	 * controlled solely by config variables such as $config['flood_time'] and $config['flood_time_ip'], and
 	 * it still is, as long as you leave the relevant $config['filters'] intact. These old config variables
 	 * still exist for backwards-compatability and general convenience.
-	 *
-	 * Read more: http://tinyboard.org/docs/index.php?p=Config/Filters
 	 */
 
 	// Minimum time between between each post by the same IP address.
@@ -835,7 +825,7 @@
 	// with non-board links.
 	// $config['custom_categories'] = array(
 	// 	'Links' => array(
-	// 		'Tinyboard' => 'http://tinyboard.org',
+	// 		'Tinyboard' => 'http://tinyboard.net',
 	// 		'Donate' => 'donate.html'
 	// 	)
 	// );
@@ -1386,8 +1376,6 @@
  *  Events (PHP 5.3.0+)
  * ====================
  */
-
-	// http://tinyboard.org/docs/?p=Events
 
 	// event_handler('post', function($post) {
 	// 	// do something

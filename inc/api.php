@@ -1,6 +1,6 @@
 <?php
 /*
- *  Copyright (c) 2010-2013 Tinyboard Development Group
+ *  Copyright (c) 2010-2015 Tinyboard Development Group
  */
 
 defined('TINYBOARD') or exit;
