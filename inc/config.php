@@ -755,8 +755,11 @@
 	// Show thread subject in page title.
 	$config['thread_subject_in_title'] = false;
 
-	// Additional lines added to the footer of all pages.
-	$config['footer'][] = _('All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.');
+    // Copyright line added to the footer of all pages.
+    $config['footer']['copyright'] = _('Powered by <a href="http://tinyboard.net/">Tinyboard</a>.');
+    
+    // Notice line added below copyright footer.
+	$config['footer']['notice'] = _('All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.');
 
 	// Characters used to generate a random password (with Javascript).
 	$config['genpassword_chars'] = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+';

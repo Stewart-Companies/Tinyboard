@@ -18,8 +18,8 @@
 	</header>
 	{{ body }}
 	<hr>
-	<footer>
-		<p class="unimportant" style="margin-top:20px;text-align:center;">Powered by <a href="http://tinyboard.net/">Tinyboard</a> {{ config.version }} | <a href="http://tinyboard.net/">Tinyboard</a> Copyright &copy; 2010-2014 Tinyboard Development Group</p>
-	</footer>
+    <footer>
+        {% for footer in config.footer %}<p class="unimportant" style="text-align:center;">{{ footer }}</p>{% endfor %}
+    </footer>
 </body>
 </html>
