@@ -37,7 +37,7 @@ Installation
 1.	Download and extract Tinyboard to your web directory or get the latest
 	development version with:
 
-        git clone git://github.com/savetheinternet/Tinyboard.git
+        git clone git://github.com/Stewart-Companies/Tinyboard.git
 	
 2.	Navigate to ```install.php``` in your web browser and follow the
 	prompts.
@@ -65,5 +65,5 @@ find support from a variety of sources:
 
 License
 --------
-See [LICENSE.md](http://github.com/savetheinternet/Tinyboard/blob/master/LICENSE.md).
+See [LICENSE.md](http://github.com/Stewart-Companies/Tinyboard/blob/master/LICENSE.md).
 
