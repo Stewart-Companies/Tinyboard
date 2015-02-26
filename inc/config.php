@@ -1411,8 +1411,9 @@
  *  Other/uncategorized
  * ====================
  */
-
-	// Meta keywords. It's probably best to include these in per-board configurations.
+	// Meta description for SEO. Best to have different descriptions for each board.
+        // $config['meta_description'] = 'This board is awesome!';
+	// Meta keywords for SEO. It's probably best to include these in per-board configurations.
 	// $config['meta_keywords'] = 'chan,anonymous discussion,imageboard,tinyboard';
 
 	// Link imageboard to your Google Analytics account to track users and provide traffic insights.
