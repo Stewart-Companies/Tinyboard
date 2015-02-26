@@ -1,7 +1,7 @@
 <?php
 
 // Installation/upgrade file	
-define('VERSION', 'v0.9.6-dev-23');
+define('VERSION', 'v1.0.0-dev-1');
 
 require 'inc/functions.php';
 
@@ -482,6 +482,8 @@ if (file_exists($config['has_installed'])) {
 				  PRIMARY KEY (`id`),
 				  KEY `ban_id` (`ban_id`)
 				) ENGINE=MyISAM  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 ;") or error(db_error());
+        case 'v0.9.6-dev-22':
+            // Nothing to do
 		case false:
 			// Update version number
 			file_write($config['has_installed'], VERSION);
